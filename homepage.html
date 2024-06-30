@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Store</title>
+    <!-- Include Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js"></script>
+    <!-- Include Firebase configuration -->
+    <script src="firebaseauth.js"></script>
+    <!-- Include custom JavaScript file -->
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <header>
+        <h1>Books Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#cart">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="products">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <div class="product-card" data-name="Product 1" data-price="19.99">
+                    <img src="https://m.media-amazon.com/images/I/812meqEmV8L._AC_UF1000,1000_QL80_.jpg" alt="Product 1">
+                    <h3>The magic of the lost story</h3>
+                    <p>$23.73</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Product 2" data-price="29.99">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8e6NZm1sbeuh4_eeoJs2tVy7iowOCBaUSgg&s" alt="Product 2">
+                    <h3>Here,there and everywhere</h3>
+                    <p>$12.64</p> 
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Product 3" data-price="39.99">
+                    <img src="https://www.hindueshop.com/wp-content/uploads/2021/12/The-Sage-with-Two-Horns.jpg" alt="Product 3">
+                    <h3>The sage with two horns</h3>
+                    <p>$42.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Product 3" data-price="39.99">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3baahSw5sZJVtscAi9JrgNb_AY5IpBASZ6Q&s" alt="Product 3">
+                    <h3>How the earth got its beauty</h3>
+                    <p>$16.58</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Product 3" data-price="39.99">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRG9jBpeG84lYGp5pB5sbwVhAenuOwDwwI8g&s" alt="Product 3">
+                    <h3>Wise and otherwise</h3>
+                    <p>$9.83</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Books store. All rights reserved.</p>
+    </footer>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
